@@ -61,6 +61,12 @@ the full path of `LTspice.exe`.
 - "Export the schematic to SVG with a white background for my report."
 - "My sim fails with 'timestep too small'. Check the LTspice docs and fix it."
 
+## Report-writing skill
+
+The repo includes an optional Claude Code skill, `research-report`, for turning simulation results
+into consistent PDF-ready reports (Typora markdown, one plot style, 6.5 in figures). See
+[skills/README.md](skills/README.md) for install and use.
+
 ## Command line and Python use
 
 The exe also has a few commands for scripts:

@@ -1,0 +1,8 @@
+* RC low-pass filter, R = 1k, C = 100n (fc = 1.59 kHz)
+V1 in 0 AC 1 PULSE(0 1 0 1n 1n 5m 10m)
+R1 in out 1k
+C1 out 0 100n
+.tran 0 5m 0 5u
+.meas TRAN vfinal FIND V(out) AT=5m
+.meas TRAN trise TRIG V(out) VAL=0.1 RISE=1 TARG V(out) VAL=0.9 RISE=1
+.end
